@@ -3,3 +3,54 @@
   margin: 0;
   padding: 0;
 }
+
+:root{
+  --one: #eef2ff;
+  --two: #e0e7ff;
+  --three: #c7d2fe;
+  --four: #a5b4fc;
+  --five: #818cf8;
+  --six: #6366f1;
+  --seven: #4f46e5;
+  --eight: #4338ca;
+  --nine: #3730a3;
+  --ten: #312e81;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 8fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header{
+  background-color: var(--seven);
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.navbar{
+  background-color: var(--six);
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.sidebar{
+  background-color: var(--three);
+  grid-column:  1 / 2;
+  grid-row: 1 / 4;
+}
+
+.main{
+  background-color: var(--four);
+  grid-column: 2 / 3 ;
+  grid-row: 3 / 4;
+}
+
+.infobar{
+  background-color: var(--five);
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
