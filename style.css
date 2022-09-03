@@ -25,19 +25,21 @@ body{
   width: 100vw;
 }
 
+/* ###################### Header ################## */
 .header{
   background-color: var(--seven);
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 }
 
+/* ###################### Navbar ################## */
 .navbar{
   background-color: var(--six);
   grid-column: 2 / 4;
   grid-row: 2 / 3;
 }
-/* ###################### Sidebar ################## */
 
+/* ###################### Sidebar ################## */
 .sidebar{
   background-color: var(--three);
   grid-column:  1 / 2;
@@ -53,15 +55,21 @@ body{
   justify-items: center;
   font-weight: 900;
   font-size: 1.7rem;
+  margin-top: 15px;
 }
 
-.topButtons > li{
+.topButtons > li, .bottomButtons > li{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px 0px;
-  justify-items: start;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 30px;
+  padding: 2px 0px;
   font-weight: 900;
   font-size: 1.3rem;
+}
+
+.topButtons > li > span, .bottomButtons > li > span{
+  text-align: left;
+  margin-top: 10px;
 }
 
 /* ###################### Main ################## */
@@ -71,6 +79,8 @@ body{
   grid-row: 3 / 4;
 }
 
+
+/* ###################### Info Bar ################## */
 .infobar{
   background-color: var(--five);
   grid-column: 3 / 4;
