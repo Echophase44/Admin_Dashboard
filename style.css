@@ -30,6 +30,40 @@ body{
   background-color: var(--seven);
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.headerLeft{
+  display: flex;
+  padding: 20px;
+  gap: 5px;
+}
+
+.headerLeft > img{
+  max-width: 35px;
+  height: auto;
+}
+
+.headerLeft > input{
+  width: 40vw;
+  background-color: var(two);
+  border-radius: 5px;
+  border-style: none;
+}
+
+.headerRight{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.userIcon{
+  max-width: 65px;
+}
+
+.headerRight > span{
+  font-size: 1.2rem;
 }
 
 /* ###################### Navbar ################## */
