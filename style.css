@@ -161,10 +161,11 @@ body{
   color: var(--two);
   cursor: pointer;
   transition: .25s;
+  border: solid var(--one) 1px;
 }
 
 .userButtons > li{
-  background-color: var(--three);
+  background-color: var(--one);
   padding: 10px 25px;
   border-radius: 15px;
 }
